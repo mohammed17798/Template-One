@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.parent {
+  margin: 20px auto;
+  height: 600px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 5px;
+}
+.parent div {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+}
