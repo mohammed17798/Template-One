@@ -26,7 +26,7 @@ body {
 /*Start header*/
 header {
   height: 100vh;
-  background-image: url(../img/slid.jpg);
+  background-image: url(img/slid.jpg);
   background-size: cover;
 }
 nav {
