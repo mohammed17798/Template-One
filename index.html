@@ -1,41 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>primary design</title>"
-    <link rel="stylesheet" href="/css/style.css"/>
+    <title>primary design</title>
+    <!--main css style-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!--normalize css -->
+    <link rel="stylesheet" href="Css/normailze.css" />
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap"
+      rel="stylesheet" />
   </head>
+
   <body>
     <header>
-      <div class="container">
-        <div class="links">
-          <div class="icon">
-            <span></span>
-            <span></span>
-            <span></span>
+      <nav>
+        <div class="container">
+          <div class="links">
+            <div class="icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#courses">courses</a></li>
+            </ul>
           </div>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#services">Services</a></li>
-          </ul>
+          <div class="logo">
+            <a href=""><img src="img/logo.png" alt=""></a>
+          </div>
         </div>
-        <div class="logo"></div>
-      </div>
+      </nav>
     </header>
-    <section class="cours network">
-      <div class="container">
-        <h2>NETWORKING</h2>
-        <hr />
+
+    <section id="courses">
+      <div class="networking course">
+        <div class="container">
+          <h2>NETWORKING</h2>
+          <hr />
+          <div class="content"></div>
+        </div>
       </div>
-    </section>
-    <section class="cours computer">
-      <div class="container">
-        <h2>Computer skills</h2>
-        <hr />
+      <div class="computer course ">
+        <div class="container">
+          <h2>Computer skills</h2>
+          <hr />
+        </div>
       </div>
     </section>
     <section class="about" id="about">
@@ -44,52 +62,38 @@
         <hr />
         <div class="info">
           <p>
-            صفحة "حول" هي الوصف الأساسي لموقع الويب الخاص بك. هنا هو الم والمزيد
+            صفحة "حول" هي الوصف الأساسي لموقع الويب الخاص بك. هنا هو المكان
+            الذي" تسمح للعملاء معرفة ما هو موقع الويب الخاص بك. يمكنك تعديل كل
+            هذا النص واستبداله بما تريد كتابته. على سبيل المثال، يمكنك إعلامهم
+            بمدة نشاطك "التجاري، وما الذي يجعل شركتك خاصة، وما هي قيمها الأساسية
+            والمزيد
           </p>
           <img src="img/about.jpg" alt="" />
         </div>
       </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="container">
         <h2>تواصل معنا</h2>
         <hr />
         <form method="POST">
-          <input
-            type="text"
-            name="name"
-            placeholder="enter your name"
-            required
-            autocomplete="off"
-          />
-          <input
-            type="tel"
-            name="phon"
-            placeholder="enter your phone"
-            required
-            autocomplete="off"
-            maxlength="11"
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="enter your email "
-            required
-            autocomplete="off"
-          />
-
-          <textarea
-            name="massage"
-            cols="30"
-            rows="10"
-            placeholder="type your massage"
-            required
-            autocomplete="off"
-          ></textarea>
-
+          <input type="text" name="name" placeholder="enter your name" required autocomplete="off" />
+          <input type="tel" name="phon" placeholder="enter your phone" required autocomplete="off" maxlength="11" />
+          <input type="email" name="email" placeholder="enter your email " required autocomplete="off" />
+          <textarea name="massage" cols="30" rows="10" placeholder="type your massage" required
+            autocomplete="off"></textarea>
           <input type="submit" name="send" value="submit" />
         </form>
       </div>
     </section>
+    <footer>
+      <div class="container">
+        <div class="copyright">
+          <p>copyright &copy; 2021 madina academy</p>
+        </div>
+      </div>
+      </div>
+    </footer>
   </body>
+
 </html>
