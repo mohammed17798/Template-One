@@ -1,0 +1,264 @@
+:root {
+  --main-color: #1f1d1ded;
+}
+* {
+  transition: 0.5s all;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+  transition: 1s all;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/*Start header*/
+header {
+  height: 100vh;
+  background-image: url(../img/slid.jpg);
+  background-size: cover;
+}
+nav {
+  position: fixed;
+  top: 0%;
+  z-index: 1;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid rgb(156, 155, 155);
+}
+
+nav .container {
+  height: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav:hover {
+  background-color: rgb(212, 211, 211);
+}
+.icon {
+  width: 40px;
+  flex-wrap: wrap;
+  display: none;
+  padding-top: 10px;
+}
+.icon span {
+  background-color: rgb(5, 5, 5);
+  margin-bottom: 7px;
+  height: 3px;
+  width: 100%;
+}
+.icon span:nth-child(2) {
+  width: 65%;
+  transition: 0.5s;
+}
+.links:hover .icon span:nth-child(2) {
+  width: 100%;
+}
+nav .container .links ul {
+  display: flex;
+  width: 100%;
+}
+nav .container .links ul li a {
+  display: block;
+  padding: 10px;
+  transition: 0.5s;
+  font-family: cursive;
+  font-size: x-large;
+  margin: 10px;
+}
+nav .container .links ul li:hover {
+  cursor: pointer;
+  background-color: #192a35;
+}
+nav .container .links ul li:hover a {
+  color: white;
+}
+
+/*End header*/
+
+/*Start intro*/
+.intro {
+  min-height: 100px;
+}
+.intro img {
+  width: 100%;
+}
+/*End intro*/
+
+h2 {
+  text-align: center;
+  color: var(--main-color);
+  font-size: 25px;
+  margin-top: 20px;
+}
+/*Start course*/
+.course .container {
+  min-height: 600px;
+}
+.course .container .content {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+.course .container .content .articale {
+  height: auto;
+  /* background-color: rgb(122, 122, 122); */
+  display: flex;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+.course .container .content .articale .articale_image {
+  width: auto;
+  height: auto;
+}
+.course .container .content .articale .articale_image a img {
+  width: 110px;
+  height: 73px;
+}
+.articale .details p {
+  text-align: right;
+  line-height: 20px;
+  margin-bottom: 10px;
+  font-size: small;
+}
+
+/*End course*/
+
+/*Start about*/
+.about .container .info p {
+  text-align: center;
+  line-height: 35px;
+  word-spacing: 1px;
+  font-size: 20px;
+  padding: 10px;
+}
+.about .container .info img {
+  width: 100%;
+  height: 100%;
+}
+/*End about*/
+
+/*Start contact*/
+.container hr {
+  width: 120px;
+  height: 2px;
+  background-color: #16162d;
+  margin: 5px auto;
+}
+.about .container hr,
+.contact .container hr {
+  width: 80px;
+}
+.contact form input {
+  margin: 30px auto;
+  padding: 10px;
+  width: 100%;
+  height: 50px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  outline-style: none;
+  font-family: cursive;
+  display: block;
+  background-color: #ecf0f1;
+}
+.contact form textarea {
+  margin: 30px auto;
+  padding: 15px;
+  width: 100%;
+  border-radius: 30px;
+  outline-style: none;
+  font-family: cursive;
+  display: block;
+  text-transform: capitalize;
+}
+.contact form input[name="send"] {
+  font-size: 30px;
+  padding: 0px;
+  background-color: #2980b9;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.contact form input[name="send"]:hover {
+  color: white;
+  display: block;
+  background-color: #192a35;
+}
+/*End contact*/
+
+/*start footer*/
+footer {
+  background-color: #747070ed;
+}
+footer .container {
+  min-height: 40px;
+  text-align: center;
+}
+footer .container p {
+  padding-top: 10px;
+}
+/*End footer*/
+
+/*start media*/
+@media (min-width: 0px) and (max-width: 768px) {
+  .icon {
+    display: flex;
+  }
+  nav .container .links ul {
+    display: none;
+    position: absolute;
+    left: 0px;
+    background-color: white;
+  }
+  nav .container .links:hover ul {
+    display: block;
+  }
+  .links {
+    width: 100%;
+  }
+  nav .container .links ul li:not(:last-child) a {
+    border-bottom: 1px solid rgb(180, 177, 177);
+  }
+  nav .container .links ul li a {
+    padding: 15px 0;
+  }
+  nav .container .links ul li:hover {
+    padding-right: 15px;
+  }
+  .course .container .content {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
+@media (max-width: 320px) {
+  /* .course .container .content .articale {
+    display: block;
+  }
+  .course .container .content .articale .image a img {
+    width: 100%;
+  }
+
+  .course .container .content .articale .image {
+    margin: 0 0 10px;
+  } */
+}
+@media (min-width: 992px) {
+  .container {
+    width: 90%;
+  }
+}
