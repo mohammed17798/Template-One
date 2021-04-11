@@ -89,7 +89,8 @@ nav .container .links ul li:hover {
 nav .container .links ul li:hover a {
   color: white;
 }
-
+.logo{min-width:200px;}
+.logo img{width:100%}
 /*End header*/
 
 /*Start intro*/
